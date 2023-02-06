@@ -30,7 +30,6 @@ This app fetch data from two free api (see links at the end) with loader from re
 - [Tailwind](https://tailwindcss.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React Router](https://reactrouter.com/en/main)
-- [UUID](https://www.npmjs.com/package/uuid)
 - [react-countup](https://www.npmjs.com/package/react-countup)
 - [react-chartjs-2](https://react-chartjs-2.js.org/)
 - [chart.js](https://www.chartjs.org/)

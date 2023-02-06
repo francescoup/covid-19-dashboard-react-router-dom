@@ -1,0 +1,17 @@
+.charts {
+  @apply relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md xl:col-span-2;
+}
+
+.chartsContent {
+  @apply relative bg-clip-border mx-4 p-2 rounded-xl overflow-hidden bg-blue-600 text-white shadow-blue-500/40 shadow-lg -mt-6 h-80;
+}
+
+/* Dark Theme */
+
+:global(.dark) .charts {
+  @apply bg-gray-900 text-gray-100;
+}
+
+:global(.dark) .chartsContent {
+  @apply bg-fuchsia-900 shadow-stone-900/30 text-gray-100;
+}

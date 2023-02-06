@@ -1,0 +1,48 @@
+.miniCard {
+  @apply relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md;
+}
+
+.miniCardContent {
+  @apply p-6 pt-0;
+}
+
+.miniCardItem {
+  @apply flex items-start gap-4 py-3;
+}
+
+.miniCardIcon {
+  @apply text-2xl  text-orange-500 rounded-full;
+}
+
+.blue {
+  @apply text-blue-900;
+}
+
+.yellow {
+  @apply text-yellow-500;
+}
+
+.red {
+  @apply text-red-700;
+}
+
+.miniCardItem h3 {
+  @apply text-slate-600 dark:text-slate-100 text-sm font-bold;
+}
+.miniCardItem p {
+  @apply text-slate-400 dark:text-slate-50 text-sm;
+}
+
+/* Dark Theme */
+
+:global(.dark) .miniCard {
+  @apply bg-slate-900 text-gray-100;
+}
+
+:global(.dark) h4 {
+  @apply text-gray-200;
+}
+
+:global(.dark) p {
+  @apply text-gray-100;
+}

@@ -1,0 +1,11 @@
+.errorPage {
+  @apply flex items-center justify-center w-screen h-screen bg-slate-600;
+}
+
+.errorPage h4 {
+  @apply text-9xl font-extrabold font-sans text-white tracking-widest;
+}
+
+.errorSubTitle {
+  @apply bg-yellow-400 p-2 text-sm font-sans rounded rotate-12 absolute;
+}

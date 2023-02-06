@@ -1,0 +1,13 @@
+.pieCharts {
+  @apply relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md;
+}
+
+.pieChartsContent {
+  @apply relative bg-clip-border mx-4 p-2 rounded-xl overflow-hidden bg-gradient-to-tr from-blue-600 to-blue-400 text-white shadow-blue-500/40 shadow-lg -mt-6 h-80;
+}
+
+/* Dark Mode */
+
+:global(.dark) .pieCharts {
+  @apply bg-slate-900;
+}

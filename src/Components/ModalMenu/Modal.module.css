@@ -1,0 +1,14 @@
+.modal {
+  @apply bg-white w-[200px] absolute top-14 right-0 z-20 rounded-xl p-2 shadow-md transition-all;
+}
+
+.modalOpen {
+  @apply opacity-100 translate-y-0 block;
+}
+
+.modalMenu {
+  @apply gap-y-4 flex-col justify-center transition-all;
+}
+.links {
+  @apply flex gap-2 items-center rounded-lg p-3 text-slate-700 text-sm hover:bg-slate-200;
+}

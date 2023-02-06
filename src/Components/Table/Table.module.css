@@ -1,0 +1,37 @@
+.table {
+  @apply relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md overflow-hidden xl:col-span-2 h-96;
+}
+
+.tableContainer {
+  @apply p-6 overflow-y-scroll px-0 pt-0 pb-2 scrollbar-thumb-rounded scrollbar-thin rounded-xl;
+}
+
+.tableContent {
+  @apply w-full min-w-[640px] table-auto text-sm;
+}
+
+.tableContent th {
+  @apply border-b border-slate-100 py-3 px-6 text-left;
+}
+
+.tableContent td {
+  @apply py-3 px-5 border-b border-slate-100;
+}
+
+/* Dark Theme */
+
+:global(.dark) .table {
+  @apply bg-slate-900 text-gray-200;
+}
+
+:global(.dark) .tableContainer {
+  @apply bg-fuchsia-900;
+}
+
+:global(.dark) .tableContent td {
+  @apply border-fuchsia-800;
+}
+
+:global(.dark) .tableContent th {
+  @apply border-fuchsia-800;
+}

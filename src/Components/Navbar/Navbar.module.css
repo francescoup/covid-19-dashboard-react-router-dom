@@ -1,0 +1,40 @@
+.navbar {
+  @apply w-[100%] flex items-center justify-between;
+}
+
+.navbarProfile {
+  @apply flex items-center gap-1 relative cursor-pointer;
+}
+.navbarContent {
+  @apply flex gap-2;
+}
+
+.navbarIcons {
+  @apply text-slate-900 text-xl border bg-white p-2 shadow-md hover:shadow-xl rounded-full;
+}
+
+.userProfile {
+  @apply rounded-full shadow-md hover:shadow-lg;
+}
+
+.menuIcon {
+  @apply relative mt-1;
+}
+
+.userName {
+  @apply hidden text-sm lg:block;
+}
+
+/* Dark Theme */
+
+:global(.dark) .menuIcon {
+  @apply text-slate-50;
+}
+
+:global(.dark) .userName {
+  @apply text-slate-50;
+}
+
+:global(.dark) .navbarIcons {
+  @apply text-slate-200 bg-slate-900 border-slate-800;
+}

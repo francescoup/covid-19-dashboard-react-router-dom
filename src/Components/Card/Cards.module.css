@@ -1,0 +1,33 @@
+.cards {
+  @apply relative flex flex-col bg-clip-border font-sans rounded-xl bg-white text-gray-700 shadow-md transition-all;
+}
+
+.cardsContent {
+  @apply p-4 text-right;
+}
+
+.cardsContent h3 {
+  @apply block antialiased text-base leading-normal font-normal font-sans text-gray-600;
+}
+
+.cardsContent p {
+  @apply block antialiased tracking-normal font-sans text-2xl font-bold leading-snug text-gray-900;
+}
+
+.cardsIcon {
+  @apply bg-clip-border mx-4 rounded-xl overflow-hidden  text-white shadow-blue-500/40 shadow-lg absolute -mt-4 grid h-16 w-16 place-items-center;
+}
+
+/* Dark Mode */
+
+:global(.dark) .cards {
+  @apply bg-slate-900;
+}
+
+:global(.dark) h3 {
+  @apply text-gray-200;
+}
+
+:global(.dark) p {
+  @apply text-gray-100;
+}

@@ -11,7 +11,7 @@
 }
 
 .filterLink {
-  @apply text-sm leading-5 max-sm:leading-8 cursor-pointer font-medium text-gray-300  pb-1 w-full hover:text-gray-100;
+  @apply block text-sm leading-5 max-sm:leading-8 cursor-pointer font-medium text-gray-300  pb-3 w-full hover:text-gray-100;
 }
 
 .activeFilterLink {

@@ -40,9 +40,14 @@ export const UserMenu = ({ classLink, navItem }) => {
     <ul className={classLink}>
       {userLink.map((el, i) => {
         return (
-          <li key={`menu-utente-${i}`} className={navItem}>
-            {el.icon}
-            <a href={el.url} target="_blank" rel="noreferrer">
+          <li key={`menu-utente-${i}`}>
+            <a
+              href={el.url}
+              className={navItem}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {el.icon}
               {el.text}
             </a>
           </li>
@@ -88,14 +93,11 @@ export const SidebarMenu = ({ classMenu, subMenu, styles }) => {
                   {subMenu.map((regione, i) => {
                     let isActive = searchParams.get("regione") === regione;
                     return (
-                      <li
-                        key={i}
-                        className={`${styles.filterLink} 
+                      <li key={i} onClick={closeSidebar}>
+                        <Link
+                          className={`${styles.filterLink} 
                           ${isActive ? styles.activeFilterLink : ""}
                         `}
-                        onClick={closeSidebar}
-                      >
-                        <Link
                           key={`lista-regioni-${i}`}
                           to={`/?regione=${regione}`}
                         >
